@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OhMyFood!</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet"
+     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- FONTAWESONE -->
+    <script src="https://kit.fontawesome.com/af249e68ba.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <!-- Page content -->
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img src="img/logo/ohmyfood.png" alt="Logo du site" />
+      </div>
+      <form class="header__form">
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <input id="city_search" type="text" placeholder="Paris, Belleville"/>
+      </form>
+    </header>
+    <!-- End of Header -->
+    <!-- Main Section Project -->
+    <main class="project">
+      <!-- Section Introduction -->
+      <section class="projet__introduction">
+        <h1 class="project__heading1">Réservez le menu qui vous convient</h1>
+        <p class="project__paragraph project__paragraph--grey">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="project__button" id="explore_button" type="submit">Explorer nos restaurants</button>
+      </section>
+      <!-- End of Section Introduction -->
+      <!-- Section Fonctionnement-->
+      <section class="projet__fonctionnement">
+        <h2 class="project__heading2">Fonctionnement</h2>
+        <div class="projet__filter">
+          <div class="filter__selection" >
+            <span>"numero1"</span>
+            <span>"fontawesome"</span>
+            <h3 class="project__heading3">Choisissez un restaurant</h3>
+          </div>
+          <div class="filter__selection" >
+            <span>"numero2"</span>
+            <span>"fontawesome"</span>
+            <h3 class="project__heading3">Composez votre menu</h3>
+          </div>
+          <div class="filter__selection" >
+            <span>"numero3"</span>
+            <span>"fontawesome"</span>
+            <h3 class="project__heading3">Dégustez au restaurant</h3>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section Fonctionnement -->
+      <!-- Section Restaurants -->
+      <section restaurant="projet__restaurants">
+        <h2 class="project__heading2">Restaurants</h2>
+        <div class="project__listeRestaurants">
+          <figure class="project__figure">
+            <img src="img/restaurants/la_palette_du_gout.jpg"
+                 alt="Restaurant la palette du gout">
+            <figcaption class="project__figcaption">
+              <h3 class="project__heading3">La palette du goût</h3>
+              <p class="project__paragraph">Ménilmontant</p>
+              <span>"petit coeur"</span>
+            </figcaption>
+        </figure>
+        <figure class="project__figure">
+          <img src="img/restaurants/la_note_enchantee.jpg"
+               alt="Restaurant la note enchantée">
+          <figcaption class="project__figcaption">
+            <h3 class="project__heading3">La note enchantée</h3>
+            <p class="project__paragraph">Charonne</p>
+            <span>"petit coeur"</span >
+          </figcaption>
+      </figure>
+      <figure class="project__figure">
+        <img src="img/restaurants/a_la_francaise.jpg"
+             alt="Restaurant à la française">
+        <figcaption class="project__figcaption">
+          <h3 class="project__heading3">À la française</h3>
+          <p class="project__paragraph">Citée rouge</p>
+          <span>"petit coeur"</span>
+        </figcaption>
+      </figure>
+      <figure class="project__figure">
+        <img src="img/restaurants/le_delice_des_sens.jpg"
+             alt="Restaurant le délice des sens">
+        <figcaption class="project__figcaption">
+          <h3 class="project__heading3">Le délice des sens</h3>
+          <p class="project__paragraph">Folie-Méricourt</p>
+          <span>"petit coeur"</span>
+        </figcaption>
+      </figure>
+        </div>
+      </section>
+      <!-- End of Section Restaurants -->
+    </main>
+    <!-- End of Main Section -->
+    <!-- Footer -->
+    <footer class="footer">
+      <h5 class="footer__heading5">ohmyfood</h5>
+      <div>
+        <span>petits couverts</span>
+        <p class="footer__paragraph">Proposer un restaurant</p>
+      </div>
+      <div>
+        <span>petites main</span>
+        <p class="footer__paragraph"></p>>Devenir partenaire</p>
+      </div>
+      <p class="footer__paragraph"></p>>Mentions légales</p>
+      <p class="footer__paragraph"></p>>contact</p>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
