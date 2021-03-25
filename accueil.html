@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Bienvenue chez Ohmyfood!" />
+    <meta
+      name="description"
+      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
+    />
     <title>OhMyFood!</title>
+
+    <!-- METATAGS -->
+    <!-- OpenGraph data -->
+    <meta property="og:title" content="Bienvenue chez Ohmyfood!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ohmyfood.com/" />
+    <meta
+      property="og:image"
+      content="https://www.ohmyfood.com/imag/logo/ohmyfood.png"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
+    />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OhMyFood!" />
+    <meta name="twitter:title" content="Bienvenue chez Ohmyfood!" />
+    <meta
+      name="twitter:description"
+      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ohmyfood.com/imag/logo/ohmyfood.png"
+    />
+
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-     rel="stylesheet"
-     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- FONTAWESONE -->
-    <script src="https://kit.fontawesome.com/af249e68ba.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/af249e68ba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
+
   <!-- Page content -->
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img src="img/logo/ohmyfood.png" alt="Logo du site" />
+        <img class="logo" src="img/logo/ohmyfood.png" alt="Logo du site" />
       </div>
-      <form class="header__form">
-        <span><i class="fas fa-map-marker-alt"></i></span>
-        <input id="city_search" type="text" placeholder="Paris, Belleville"/>
+      <form class="searchForm">
+        <span class="searchForm__span"
+          ><i class="fas fa-map-marker-alt"></i
+        ></span>
+        <input
+          class="searchForm__input"
+          id="city_search"
+          type="text"
+          placeholder="Paris, Belleville"
+        />
       </form>
     </header>
     <!-- End of Header -->
     <!-- Main Section Project -->
-    <main class="project">
-      <!-- Section Introduction -->
-      <section class="projet__introduction">
-        <h1 class="project__heading1">Réservez le menu qui vous convient</h1>
-        <p class="project__paragraph project__paragraph--grey">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="project__button" id="explore_button" type="submit">Explorer nos restaurants</button>
+    <main class="container">
+      <!-- Section Presentation -->
+      <section class="presentation">
+        <h1 class="presentation">Réservez le menu qui vous convient</h1>
+        <p class="presentation">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <button class="presentation" id="explore-button" type="submit">
+          Explorer nos restaurants
+        </button>
       </section>
-      <!-- End of Section Introduction -->
-      <!-- Section Fonctionnement-->
-      <section class="projet__fonctionnement">
-        <h2 class="project__heading2">Fonctionnement</h2>
-        <div class="projet__filter">
-          <div class="filter__selection" >
-            <span>"numero1"</span>
-            <span>"fontawesome"</span>
-            <h3 class="project__heading3">Choisissez un restaurant</h3>
+      <!-- End of Presentation -->
+      <!-- Section Fonctionnement -->
+      <section class="fonctionnement">
+        <h2 class="fonctionnement__title">Fonctionnement</h2>
+        <div class="filter">
+          <div class="selection">
+            <span class="selection__circleNumber">1</span>
+            <span><i class="fas fa-mobile-alt"></i></span>
+            <h3 class="selection__title">Choisissez un restaurant</h3>
           </div>
-          <div class="filter__selection" >
-            <span>"numero2"</span>
-            <span>"fontawesome"</span>
-            <h3 class="project__heading3">Composez votre menu</h3>
+          <div class="selection">
+            <span class="selection__circleNumber">2</span>
+            <span><i class="fas fa-list-ul"></i></span>
+            <h3 class="selection__title">Composez votre menu</h3>
           </div>
-          <div class="filter__selection" >
-            <span>"numero3"</span>
-            <span>"fontawesome"</span>
-            <h3 class="project__heading3">Dégustez au restaurant</h3>
+          <div class="selection">
+            <span class="selection__circleNumber">3</span>
+            <span><i class="fas fa-store"></i></span>
+            <h3 class="selection__title">Dégustez au restaurant</h3>
           </div>
         </div>
       </section>
       <!-- End of Section Fonctionnement -->
       <!-- Section Restaurants -->
-      <section restaurant="projet__restaurants">
-        <h2 class="project__heading2">Restaurants</h2>
-        <div class="project__listeRestaurants">
-          <figure class="project__figure">
-            <img src="img/restaurants/la_palette_du_gout.jpg"
-                 alt="Restaurant la palette du gout">
-            <figcaption class="project__figcaption">
-              <h3 class="project__heading3">La palette du goût</h3>
-              <p class="project__paragraph">Ménilmontant</p>
-              <span>"petit coeur"</span>
+      <section class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="listeRestaurants">
+          <figure class="figure">
+            <img
+              class="figure__image"
+              src="img/restaurants/la_palette_du_gout.jpg"
+              alt="Restaurant la palette du gout"
+            />
+            <figcaption class="figcaption">
+              <h3 class="figcaption__title">La palette du goût</h3>
+              <p class="figcaption__paragraph">Ménilmontant</p>
+              <span class="figcaption__span"><i class="far fa-heart"></i></span>
             </figcaption>
-        </figure>
-        <figure class="project__figure">
-          <img src="img/restaurants/la_note_enchantee.jpg"
-               alt="Restaurant la note enchantée">
-          <figcaption class="project__figcaption">
-            <h3 class="project__heading3">La note enchantée</h3>
-            <p class="project__paragraph">Charonne</p>
-            <span>"petit coeur"</span >
-          </figcaption>
-      </figure>
-      <figure class="project__figure">
-        <img src="img/restaurants/a_la_francaise.jpg"
-             alt="Restaurant à la française">
-        <figcaption class="project__figcaption">
-          <h3 class="project__heading3">À la française</h3>
-          <p class="project__paragraph">Citée rouge</p>
-          <span>"petit coeur"</span>
-        </figcaption>
-      </figure>
-      <figure class="project__figure">
-        <img src="img/restaurants/le_delice_des_sens.jpg"
-             alt="Restaurant le délice des sens">
-        <figcaption class="project__figcaption">
-          <h3 class="project__heading3">Le délice des sens</h3>
-          <p class="project__paragraph">Folie-Méricourt</p>
-          <span>"petit coeur"</span>
-        </figcaption>
-      </figure>
+          </figure>
+          <figure class="figure">
+            <img
+              class="figure__image"
+              src="img/restaurants/la_note_enchantee.jpg"
+              alt="Restaurant la note enchantée"
+            />
+            <figcaption class="figcaption">
+              <h3 class="figcaption__title">La note enchantée</h3>
+              <p class="figcaption__paragraph">Charonne</p>
+              <span class="figcaption__span"><i class="far fa-heart"></i></span>
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              class="figure__image"
+              src="img/restaurants/a_la_francaise.jpg"
+              alt="Restaurant à la française"
+            />
+            <figcaption class="figcaption">
+              <h3 class="figcaption__title">À la française</h3>
+              <p class="figcaption__paragraph">Citée rouge</p>
+              <span class="figcaption__span"><i class="far fa-heart"></i></span>
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              class="figure__image"
+              src="img/restaurants/le_delice_des_sens.jpg"
+              alt="Restaurant le délice des sens"
+            />
+            <figcaption class="figcaption">
+              <h3 class="figcaption__title">Le délice des sens</h3>
+              <p class="figcaption__paragraph">Folie-Méricourt</p>
+              <span class="figcaption__span"><i class="far fa-heart"></i></span>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!-- End of Section Restaurants -->
@@ -109,17 +170,17 @@
     <!-- End of Main Section -->
     <!-- Footer -->
     <footer class="footer">
-      <h5 class="footer__heading5">ohmyfood</h5>
-      <div>
-        <span>petits couverts</span>
-        <p class="footer__paragraph">Proposer un restaurant</p>
+      <div class="footer__logo">
+        <img class="logo" src="img/logo/ohmyfood.png" alt="Logo du site" />
       </div>
-      <div>
-        <span>petites main</span>
-        <p class="footer__paragraph"></p>>Devenir partenaire</p>
+      <div class="footerContent">
+        <ul class="footerlist">
+          <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+          <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+          <li>Mentions légales</li>
+          <li><a href="mailto:test@test.local">Contact</a></li>
+        </ul>
       </div>
-      <p class="footer__paragraph"></p>>Mentions légales</p>
-      <p class="footer__paragraph"></p>>contact</p>
     </footer>
     <!-- End of Footer -->
   </body>
