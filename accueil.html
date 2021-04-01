@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Bienvenue chez Ohmyfood!" />
-    <meta
-      name="description"
-      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
-    />
+    <meta name="description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient" />
     <title>OhMyFood!</title>
 
     <!-- METATAGS -->
@@ -15,45 +12,24 @@
     <meta property="og:title" content="Bienvenue chez Ohmyfood!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ohmyfood.com/" />
-    <meta
-      property="og:image"
-      content="https://www.ohmyfood.com/imag/logo/ohmyfood.png"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
-    />
+    <meta property="og:image" content="https://www.ohmyfood.com/imag/logo/ohmyfood.png" />
+    <meta property="og:description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient" />
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OhMyFood!" />
     <meta name="twitter:title" content="Bienvenue chez Ohmyfood!" />
-    <meta
-      name="twitter:description"
-      content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient"
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.ohmyfood.com/imag/logo/ohmyfood.png"
-    />
+    <meta name="twitter:description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins et réservez le menu qui vous convient" />
+    <meta name="twitter:image" content="https://www.ohmyfood.com/imag/logo/ohmyfood.png" />
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- FONTAWESONE -->
-    <script
-      src="https://kit.fontawesome.com/af249e68ba.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/af249e68ba.js" crossorigin="anonymous"></script>
   </head>
 
   <!-- Page content -->
@@ -65,12 +41,7 @@
         <div class="searchForm__icone">
           <i class="fas fa-map-marker-alt"></i>
         </div>
-        <input
-          class="searchForm__input"
-          id="city_search"
-          type="text"
-          placeholder="Paris, Belleville"
-        />
+        <input class="searchForm__input" id="city_search" type="text" placeholder="Paris, Belleville" />
       </form>
     </header>
     <!-- End of Header -->
@@ -78,13 +49,9 @@
     <main class="blocPage">
       <!-- Section Presentation -->
       <section class="presentation">
-        <h1 class="presentation">Réservez le menu qui vous convient</h1>
-        <p class="presentation">
-          Découvrez des restaurants d'exception, sélectionnés par nos soins.
-        </p>
-        <button class="presentation" id="explore-button" type="submit">
-          Explorer nos restaurants
-        </button>
+        <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+        <p class="presentation__paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="button" id="explore-button" type="submit">Explorer nos restaurants</button>
       </section>
       <!-- End of Presentation -->
       <!-- Section Fonctionnement -->
@@ -93,17 +60,17 @@
         <div class="filter">
           <div class="selection">
             <span class="selection__circleNumber">1</span>
-            <span><i class="fas fa-mobile-alt"></i></span>
+            <span class="selection__icon"><i class="fas fa-mobile-alt"></i></span>
             <h3 class="selection__title">Choisissez un restaurant</h3>
           </div>
           <div class="selection">
             <span class="selection__circleNumber">2</span>
-            <span><i class="fas fa-list-ul"></i></span>
+            <span class="selection__icon"><i class="fas fa-list-ul"></i></span>
             <h3 class="selection__title">Composez votre menu</h3>
           </div>
           <div class="selection">
             <span class="selection__circleNumber">3</span>
-            <span><i class="fas fa-store"></i></span>
+            <span class="selection__icon"><i class="fas fa-store"></i></span>
             <h3 class="selection__title">Dégustez au restaurant</h3>
           </div>
         </div>
@@ -114,11 +81,7 @@
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="listeRestaurants">
           <figure class="figure">
-            <img
-              class="figure__image"
-              src="img/restaurants/la_palette_du_gout.jpg"
-              alt="Restaurant la palette du gout"
-            />
+            <img class="figure__image" src="img/restaurants/la_palette_du_gout.jpg" alt="Restaurant la palette du gout" />
             <figcaption class="figcaption">
               <h3 class="figcaption__title">La palette du goût</h3>
               <p class="figcaption__paragraph">Ménilmontant</p>
@@ -126,11 +89,7 @@
             </figcaption>
           </figure>
           <figure class="figure">
-            <img
-              class="figure__image"
-              src="img/restaurants/la_note_enchantee.jpg"
-              alt="Restaurant la note enchantée"
-            />
+            <img class="figure__image" src="img/restaurants/la_note_enchantee.jpg" alt="Restaurant la note enchantée" />
             <figcaption class="figcaption">
               <h3 class="figcaption__title">La note enchantée</h3>
               <p class="figcaption__paragraph">Charonne</p>
@@ -138,11 +97,7 @@
             </figcaption>
           </figure>
           <figure class="figure">
-            <img
-              class="figure__image"
-              src="img/restaurants/a_la_francaise.jpg"
-              alt="Restaurant à la française"
-            />
+            <img class="figure__image" src="img/restaurants/a_la_francaise.jpg" alt="Restaurant à la française" />
             <figcaption class="figcaption">
               <h3 class="figcaption__title">À la française</h3>
               <p class="figcaption__paragraph">Citée rouge</p>
@@ -150,11 +105,7 @@
             </figcaption>
           </figure>
           <figure class="figure">
-            <img
-              class="figure__image"
-              src="img/restaurants/le_delice_des_sens.jpg"
-              alt="Restaurant le délice des sens"
-            />
+            <img class="figure__image" src="img/restaurants/le_delice_des_sens.jpg" alt="Restaurant le délice des sens" />
             <figcaption class="figcaption">
               <h3 class="figcaption__title">Le délice des sens</h3>
               <p class="figcaption__paragraph">Folie-Méricourt</p>

@@ -2,9 +2,18 @@
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+$white-color: #fff;
 $grey-color: #f6f6f6;
+$grey-darker: rgb(87, 87, 87);
+$grey-lighter: #888;
 $color-shadow: rgba(75, 74, 74, 0.8);
-$grey-darker:rgb(46, 46, 46);
+
 
 /*** Font ***/
-$shrikhand: 'Shrikhand', cursive;
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Shrikhand', cursive;
+
+/*** Buttons ***/
+$button-color: linear-gradient($secondary, $primary);
+$button-shadow: 0 5px 15px 0 darken($grey-color, 10);
+$button-padding: 15px 20px;
