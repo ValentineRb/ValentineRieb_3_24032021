@@ -1,17 +1,15 @@
 /** button **/
 
 .button {
-  background: $button-color;
-  font-family: $main-font;
-  font-size: 15px;
   border: none;
   outline: none;
   border-radius: 25px;
   box-shadow: $button-shadow;
-  color: $white-color;
+  background: $button-color;
   cursor: pointer;
   padding: $button-padding;
   transition: .2s;
 }
 
-/** figure **/
+/** form **/
+

@@ -51,7 +51,7 @@
       <section class="presentation">
         <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
         <p class="presentation__paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="button" id="explore-button" type="submit">Explorer nos restaurants</button>
+        <button class="button" id="explore-button" type="submit"><a href="#explorer">Explorer nos restaurants</a></button>
       </section>
       <!-- End of Presentation -->
       <!-- Section Fonctionnement -->
@@ -79,39 +79,49 @@
       <!-- Section Restaurants -->
       <section class="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
-        <div class="listeRestaurants">
-          <figure class="figure">
-            <img class="figure__image" src="img/restaurants/la_palette_du_gout.jpg" alt="Restaurant la palette du gout" />
-            <figcaption class="figcaption">
-              <h3 class="figcaption__title">La palette du goût</h3>
-              <p class="figcaption__paragraph">Ménilmontant</p>
-              <span class="figcaption__span"><i class="far fa-heart"></i></span>
-            </figcaption>
-          </figure>
-          <figure class="figure">
-            <img class="figure__image" src="img/restaurants/la_note_enchantee.jpg" alt="Restaurant la note enchantée" />
-            <figcaption class="figcaption">
-              <h3 class="figcaption__title">La note enchantée</h3>
-              <p class="figcaption__paragraph">Charonne</p>
-              <span class="figcaption__span"><i class="far fa-heart"></i></span>
-            </figcaption>
-          </figure>
-          <figure class="figure">
-            <img class="figure__image" src="img/restaurants/a_la_francaise.jpg" alt="Restaurant à la française" />
-            <figcaption class="figcaption">
-              <h3 class="figcaption__title">À la française</h3>
-              <p class="figcaption__paragraph">Citée rouge</p>
-              <span class="figcaption__span"><i class="far fa-heart"></i></span>
-            </figcaption>
-          </figure>
-          <figure class="figure">
-            <img class="figure__image" src="img/restaurants/le_delice_des_sens.jpg" alt="Restaurant le délice des sens" />
-            <figcaption class="figcaption">
-              <h3 class="figcaption__title">Le délice des sens</h3>
-              <p class="figcaption__paragraph">Folie-Méricourt</p>
-              <span class="figcaption__span"><i class="far fa-heart"></i></span>
-            </figcaption>
-          </figure>
+        <div class="listeRestaurants" id="explorer">
+          <a href="la_palette_du_gout.html">
+            <figure class="figure">
+              <img class="figure__image" src="img/restaurants/la_palette_du_gout.jpg" alt="Restaurant la palette du gout" />
+              <figcaption class="figcaption">
+                <span class="figcaption__nouveau">Nouveau</span>
+                <h3 class="figcaption__title">La palette du goût</h3>
+                <p class="figcaption__paragraph">Ménilmontant</p>
+                <span class="figcaption__span"><i class="far fa-heart"></i></span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="la_note_enchantee.html">
+            <figure class="figure">
+              <img class="figure__image" src="img/restaurants/la_note_enchantee.jpg" alt="Restaurant la note enchantée" />
+              <figcaption class="figcaption">
+                <span class="figcaption__nouveau">Nouveau</span>
+                <h3 class="figcaption__title">La note enchantée</h3>
+                <p class="figcaption__paragraph">Charonne</p>
+                <span class="figcaption__span"><i class="far fa-heart"></i></span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="a_la_francaise.html">
+            <figure class="figure">
+              <img class="figure__image" src="img/restaurants/a_la_francaise.jpg" alt="Restaurant à la française" />
+              <figcaption class="figcaption">
+                <h3 class="figcaption__title">À la française</h3>
+                <p class="figcaption__paragraph">Cité Rouge</p>
+                <span class="figcaption__span"><i class="far fa-heart"></i></span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="le_delice_des_sens.html">
+            <figure class="figure">
+              <img class="figure__image" src="img/restaurants/le_delice_des_sens.jpg" alt="Restaurant le délice des sens" />
+              <figcaption class="figcaption">
+                <h3 class="figcaption__title">Le délice des sens</h3>
+                <p class="figcaption__paragraph">Folie-Méricourt</p>
+                <span class="figcaption__span"><i class="far fa-heart"></i></span>
+              </figcaption>
+            </figure>
+          </a>
         </div>
       </section>
       <!-- End of Section Restaurants -->
@@ -119,15 +129,15 @@
     <!-- End of Main Section -->
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer__logo">
-        <img class="logo" src="img/logo/ohmyfood.png" alt="Logo du site" />
-      </div>
       <div class="footerContent">
-        <ul class="footerlist">
-          <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-          <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-          <li>Mentions légales</li>
-          <li><a href="mailto:test@test.local">Contact</a></li>
+        <div class="footer__logo">
+          <img id="logoWhite" src="img/logo/ohmyfood.png" alt="Logo du site" />
+        </div>
+        <ul class="footerList">
+          <li class="footerList__li"><i class="fas fa-utensils footerList__icone"></i>Proposer un restaurant</li>
+          <li class="footerList__li"><i class="fas fa-hands-helping footerList__icone"></i>Devenir partenaire</li>
+          <li class="footerList__li">Mentions légales</li>
+          <li class="footerList__li"><a href="mailto:test@test.local" class="footerList__a">Contact</a></li>
         </ul>
       </div>
     </footer>
