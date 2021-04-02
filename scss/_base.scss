@@ -12,19 +12,30 @@ body {
   font-family: $main-font;
 }
 
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 15px;
+  width: fit-content;
+  // border: 2px solid springgreen;
+}
+  
 /** Hearder **/
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .logo {
+  padding-bottom: 20px;
+
   @media only screen and (max-width: 516px) {
     width: 160px;
-    padding-top: 10px;
   }
 }
 
@@ -66,8 +77,7 @@ header {
 
 .button {
   a {
-    text-decoration: none;
-    color: $white-color;
+    color: white;
     font-family: $main-font;
     font-size: 15px;
   }
@@ -192,7 +202,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: $primary;
-    color: $white-color;
+    color: white;
     border-radius: 50px;
     width: 25px;
     height: 25px;
@@ -203,6 +213,7 @@ header {
 
   &__icon {
     color: $grey-lighter;
+    padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
     margin: 0 15px;
@@ -217,7 +228,6 @@ header {
   }
 
   &__title {
-    font-size: 14px;
     color: darken($grey-darker, 15%);
   }
 }
@@ -234,7 +244,7 @@ header {
   background-color: $grey-color;
   // border: 2px solid red;
 
-  @media screen and (max-width: 516px) {
+  @media only screen and (max-width: 516px) {
     align-items: flex-start;
   }
 
@@ -253,12 +263,11 @@ header {
   // border: 2px solid blue;
 
   a {
-    text-decoration: none;
-    color: $black-color;
+    color: black;
     cursor: default;
   }
 
-  @media screen and (max-width: 1257px) {
+  @media only screen and (max-width: 1257px) {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
@@ -266,7 +275,7 @@ header {
     justify-content: center;
   }
 
-  @media screen and (max-width: 694px) {
+  @media only screen and (max-width: 694px) {
     margin: 0px;
   }
 }
@@ -280,19 +289,19 @@ header {
   width: 250px;
   cursor: pointer;
 
-  @media screen and (max-width: 1257px) {
+  @media only screen and (max-width: 1257px) {
     width: 400px;
   }
 
-  @media screen and (max-width: 1036px) {
+  @media only screen and (max-width: 1036px) {
     width: 550px;
   }
 
-  @media screen and (max-width: 694px) {
+  @media only screen and (max-width: 694px) {
     width: 400px;
   }
 
-  @media screen and (max-width: 516px) {
+  @media only screen and (max-width: 516px) {
     width: 330px;
     margin-left: 20px;
   }
@@ -328,7 +337,6 @@ header {
   &__title {
     margin-top: 15px;
     margin-bottom: 5px;
-    font-size: 14px;
     width: fit-content;
 
     @media only screen and (max-width: 516px) {
@@ -368,7 +376,7 @@ header {
   margin-top: 30px;
   padding-top: 30px;
   background-color: $grey-background;
-  color: $white-color;
+  color: white;
 
   @media only screen and (max-width: 516px) {
     margin-top: 0px;
@@ -416,10 +424,166 @@ header {
 
   &__a {
     text-decoration: none;
-    color: $white-color;
+    color: white;
   }
 }
 
 /*************************/
-/*** Menu page ***/
+/******* Menu page *******/
 /*************************/
+
+.header {
+  &__a {
+    position: absolute;
+    margin-right: 90%;
+    padding-top: 10px;
+    font-size: 30px;
+    color: $grey-background;
+
+    @media only screen and (max-width: 516px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.coverImage {
+  margin-top: 30px;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+
+  @media only screen and (max-width: 516px) {
+    height: 300px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.containerMenu {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
+  background-color: $grey-color;
+  border-radius: 40px 40px 0px 0px;
+  // border: 2px solid green;
+
+  @media only screen and (max-width: 516px) {
+    margin-top: -80px;
+  }
+}
+
+.bannerMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  &__title {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: $secondary-font;
+    font-size: 40px;
+    font-weight: lighter;
+
+    @media only screen and (max-width: 516px) {
+      font-size: 30px;
+    }
+  }
+
+  &__span {
+    height: fit-content;
+    font-size: 25px;
+  }
+}
+
+.cardsMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  // border: 2px solid blue;
+
+  @media only screen and (max-width: 516px) {
+    justify-content: flex-start;
+  }
+}
+
+.entrees,
+.plats,
+.desserts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  border: 2px solid red;
+
+  @media only screen and (max-width: 1150px) {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: normal;
+
+    &::after {
+      border-bottom: 2px solid $tertiary;
+      content: '';
+      display: block;
+      padding-top: 3px;
+      width: 40px;
+  }
+  @media only screen and (max-width: 516px) {
+    font-size: 15px;
+  }
+}
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 0px;
+  border: 2px solid blueviolet;
+
+  @media only screen and (max-width: 516px) {
+    font-size: 15px;
+  }
+}
+
+.details {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: $button-shadow;
+  cursor: pointer;
+  border: 2px solid pink;
+
+  &__intitules {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border: 2px solid orange;
+  }
+
+  &__prix {
+    // border: 2px solid orange;
+  }
+
+  &__check {
+    // border: 2px solid orangered;
+  }
+}
