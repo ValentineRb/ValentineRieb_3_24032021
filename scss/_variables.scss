@@ -15,5 +15,6 @@ $secondary-font: 'Shrikhand', cursive;
 
 /*** Buttons ***/
 $button-color: linear-gradient($secondary, $primary);
-$button-shadow: 0 5px 15px 0 darken($grey-color, 10);
+$button-shadow: 0 5px 15px 0 darken($grey-color, 20);
+$button-shadow-hover: 0 5px 15px 0 darken($grey-color, 35);
 $button-padding: 15px 20px;

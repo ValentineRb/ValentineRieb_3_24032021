@@ -1,0 +1,27 @@
+/******* HEART *******/
+
+.like {
+
+  .default-icon {
+    opacity: 1;
+    position: absolute;
+  
+    &:hover {
+      opacity:0;
+    }
+  }
+
+  .hover-icon {
+    color: $primary;
+    opacity: 0;
+    position: absolute;
+
+    &:hover {
+      opacity: 1;
+      transition: .9s ease;
+      background: -webkit-linear-gradient($primary, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

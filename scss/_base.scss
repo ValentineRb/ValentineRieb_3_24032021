@@ -42,6 +42,7 @@ header {
 .searchForm {
   display: flex;
   flex-direction: row;
+  text-align: center;
   justify-content: center;
   margin-top: 15px;
   padding: 15px 15px;
@@ -55,31 +56,21 @@ header {
 
   &__icone {
     color: $grey-darker;
-    font-size: 15px;
-    padding-right: 15px;
+    font-size: 18px;
   }
 
   &__input {
     border: 0px;
     outline: none;
+    text-align: center;
     background-color: darken($grey-color, 5%);
   }
-}
 
-.searchForm__input {
-  &::placeholder {
-    color: rgb(10, 10, 10);
-    font-weight: 500;
-    font-size: 15px;
-    font-family: $main-font;
-  }
-}
-
-.button {
-  a {
-    color: white;
-    font-family: $main-font;
-    font-size: 15px;
+  & ::placeholder {
+  color: $grey-darker;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: $main-font;
   }
 }
 
@@ -355,17 +346,27 @@ header {
     }
   }
 
-  &__span {
+  i {
     text-align: right;
     padding-right: 20px;
     margin-top: -40px;
+    right: 0;
+  }
+}
+
+.like {
+  i {
+    color: darken($grey-color, 70);
     font-size: 17px;
+    cursor: pointer;
 
     @media only screen and (max-width: 516px) {
-      font-size: 19px;
+      font-size: 20px;
     }
   }
 }
+
+
 
 /** Footer **/
 
@@ -499,9 +500,10 @@ header {
     }
   }
 
-  &__span {
-    height: fit-content;
+  i {
+    padding-left: 20px;
     font-size: 25px;
+    margin-top: -25px;
   }
 }
 

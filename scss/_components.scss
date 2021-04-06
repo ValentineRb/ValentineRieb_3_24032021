@@ -1,15 +1,25 @@
-/** button **/
+/******* BUTTON *******/
 
 .button {
   border: none;
   outline: none;
+  color: white;
   border-radius: 25px;
-  box-shadow: $button-shadow;
-  background: $button-color;
-  cursor: pointer;
   padding: $button-padding;
+  font-family: $main-font;
+  font-size: 15px;
+  background: $button-color;
+  box-shadow: $button-shadow;
   transition: .2s;
-}
 
-/** form **/
+  & > a {
+  color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(lighten($secondary, 5), lighten($primary, 5));
+    box-shadow: $button-shadow-hover;
+  }
+}
 
