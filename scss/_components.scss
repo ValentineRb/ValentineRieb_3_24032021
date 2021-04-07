@@ -10,10 +10,10 @@
   font-size: 15px;
   background: $button-color;
   box-shadow: $button-shadow;
-  transition: .2s;
+  transition: 0.2s;
 
   & > a {
-  color: white;
+    color: white;
   }
 
   &:hover {
@@ -22,4 +22,3 @@
     box-shadow: $button-shadow-hover;
   }
 }
-

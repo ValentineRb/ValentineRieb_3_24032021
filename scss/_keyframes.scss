@@ -1,56 +1,40 @@
 /******* CHECK BOX *******/
 
-/* Checkbox icon animation rotate */
-@keyframes check-box {
-  10% {
-    transform: rotate(-90deg);
-  }
-
-  20% {
-    transform: rotate(-75deg) scale(1.03);
-  }
-
-  40% {
-    transform: rotate(-60deg) scale(1.08);
-  }
-
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-
-  80% {
-    transform: rotate(-30deg) scale(1.08);
+/* Checkbox icon rotation */
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(5deg) scale(1);
+    transform: rotate(360deg);
   }
 }
 
 /* Checkbox slide animation */
-@keyframes caption-check-box {
+@keyframes caption-checkbox {
   0% {
-    opacity: .5;
+    opacity: 0.5;
     transform: translate(50px, 0);
   }
 
   20% {
-    opacity: .6;
+    opacity: 0.6;
     transform: translate(30px, 0);
   }
 
   40% {
-    opacity: .7;
+    opacity: 0.7;
     transform: translate(20px, 0);
   }
 
   60% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translate(15px, 0);
   }
 
   80% {
-    opacity: .9;
+    opacity: 0.9;
     transform: translate(7px, 0);
   }
 
@@ -61,7 +45,7 @@
 }
 
 /* After checkboxbox animate price */
-@keyframes caption-check-box-price {
+@keyframes caption-checkbox-price {
   0% {
     transform: translate(50px, 0);
   }
@@ -79,10 +63,32 @@
   }
 }
 
+/* Fade-in animation */
+
+// @keyframes fadein {
+//   from {
+//     transform: scale(.1);
+//   }
+
+//   to {
+//     transform: scale(1);
+//   }
+// }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 /******* LOADING SPINNER *******/
 
 @keyframes loadspinner {
-
   100% {
     opacity: 0;
     z-index: -10;
@@ -90,7 +96,6 @@
 }
 
 @keyframes spin {
-
   0% {
     transform: rotate(0deg);
   }

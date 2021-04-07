@@ -223,7 +223,7 @@ header {
   align-items: center;
   margin-top: 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   background-color: #f1efef;
 }
 @media only screen and (max-width: 516px) {
@@ -362,14 +362,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
   padding-top: 30px;
   background-color: #333;
   color: white;
 }
 @media only screen and (max-width: 516px) {
   .footer {
-    margin-top: 0px;
     align-items: flex-start;
   }
 }
@@ -489,6 +487,11 @@ header {
   font-size: 25px;
   margin-top: -25px;
 }
+@media only screen and (max-width: 516px) {
+  .bannerMenu i {
+    padding-left: 10px;
+  }
+}
 
 .cardsMenu {
   display: flex;
@@ -510,7 +513,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
-  border: 2px solid red;
 }
 @media only screen and (max-width: 1150px) {
   .entrees,
@@ -524,11 +526,12 @@ header {
 .desserts__title {
   font-size: 20px;
   font-weight: normal;
+  color: #3e3e3e;
 }
 .entrees__title::after,
 .plats__title::after,
 .desserts__title::after {
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 3px solid #99e2d0;
   content: "";
   display: block;
   padding-top: 3px;
@@ -538,7 +541,7 @@ header {
   .entrees__title,
 .plats__title,
 .desserts__title {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -551,60 +554,63 @@ header {
   margin-bottom: 10px;
   margin-top: 10px;
   height: 70px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 15px 15px 15px 15px;
   box-shadow: 0 5px 15px 0 #c1b9b9;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid pink;
 }
-.details__intitules {
+.details__hgroup {
+  flex: 1;
   padding: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
 }
-.details__intitules h3 {
+.details__hgroup h3 {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
 }
-.details__intitules h4 {
+.details__hgroup h4 {
   margin-top: 0px;
   font-size: 13px;
+  color: #3e3e3e;
   font-weight: normal;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
 }
 @media only screen and (max-width: 516px) {
-  .details__intitules h4 {
+  .details__hgroup h4 {
     font-size: 14px;
   }
 }
-
-.caption-check-box {
-  border-radius: 0px 20px 20px 0;
-  display: none;
-  border: 2px solid orange;
-}
-.caption-check-box i {
-  color: white;
-  font-size: 25px;
-  transform: rotate(360deg);
-}
-
-.prix {
-  align-items: center;
+.details__prix {
   display: flex;
-  font-size: 15px;
-  font-weight: bold;
-  color: #383838;
+  justify-content: flex-end;
   padding-top: 20px;
   padding-right: 10px;
-  border: 2px solid yellow;
+  font-size: 15px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.details__checkbox {
+  border-radius: 0px 15px 15px 0;
+  display: none;
+}
+.details__checkbox i {
+  color: white;
+  font-size: 25px;
+}
+
+.commander {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.commander #explore_button {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /******* BUTTON *******/
@@ -630,29 +636,17 @@ header {
 }
 
 /******* CHECK BOX *******/
-/* Checkbox icon animation rotate */
-@keyframes check-box {
-  10% {
-    transform: rotate(-90deg);
-  }
-  20% {
-    transform: rotate(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotate(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotate(-30deg) scale(1.08);
+/* Checkbox icon rotation */
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(5deg) scale(1);
+    transform: rotate(360deg);
   }
 }
 /* Checkbox slide animation */
-@keyframes caption-check-box {
+@keyframes caption-checkbox {
   0% {
     opacity: 0.5;
     transform: translate(50px, 0);
@@ -679,7 +673,7 @@ header {
   }
 }
 /* After checkboxbox animate price */
-@keyframes caption-check-box-price {
+@keyframes caption-checkbox-price {
   0% {
     transform: translate(50px, 0);
   }
@@ -691,6 +685,17 @@ header {
   }
   100% {
     transform: translate(1px, 0);
+  }
+}
+/* Fade-in animation */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 /******* LOADING SPINNER *******/
@@ -730,36 +735,87 @@ header {
 }
 
 /******* CHECK BOX *******/
-.details:hover .details__intitules {
+.details:hover .details__hgroup {
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.details:hover .prix {
-  animation: caption-check-box-price ease 0.3s;
+.details:hover .details__prix {
+  animation: caption-checkbox-price ease 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   min-width: 50px;
 }
-.details:hover .caption-check-box {
-  animation: caption-check-box ease 0.3s;
+.details:hover .details__checkbox {
+  animation: caption-checkbox 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   background-color: #99e2d0;
   display: block;
   flex: 0 0 15%;
-  max-width: 50px;
+  max-width: 60px;
   overflow: hidden;
   transform-origin: 50% 50%;
 }
 .details:hover .fa-check-circle {
-  animation: check-box ease 0.5s;
+  animation: checkbox ease 0.5s;
   animation-iteration-count: 1;
   background-color: #99e2d0;
   left: 27%;
   position: absolute;
   top: 30%;
+}
+
+/******* FADE IN *******/
+.fade-1 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1000ms;
+}
+
+.fade-2 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1200ms;
+}
+
+.fade-3 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1400ms;
+}
+
+.fade-4 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1600ms;
+}
+
+.fade-5 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1800ms;
+}
+
+.fade-6 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2000ms;
+}
+
+.fade-7 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2200ms;
+}
+
+.fade-8 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2400ms;
+}
+
+.fade-9 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2600ms;
+}
+
+.fade-10 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2800ms;
 }
 
 /******* LOADING SPINNER *******/
@@ -810,29 +866,17 @@ header {
 }
 
 /******* CHECK BOX *******/
-/* Checkbox icon animation rotate */
-@keyframes check-box {
-  10% {
-    transform: rotate(-90deg);
-  }
-  20% {
-    transform: rotate(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotate(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotate(-30deg) scale(1.08);
+/* Checkbox icon rotation */
+@keyframes checkbox {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(5deg) scale(1);
+    transform: rotate(360deg);
   }
 }
 /* Checkbox slide animation */
-@keyframes caption-check-box {
+@keyframes caption-checkbox {
   0% {
     opacity: 0.5;
     transform: translate(50px, 0);
@@ -859,7 +903,7 @@ header {
   }
 }
 /* After checkboxbox animate price */
-@keyframes caption-check-box-price {
+@keyframes caption-checkbox-price {
   0% {
     transform: translate(50px, 0);
   }
@@ -871,6 +915,17 @@ header {
   }
   100% {
     transform: translate(1px, 0);
+  }
+}
+/* Fade-in animation */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 /******* LOADING SPINNER *******/

@@ -30,44 +30,94 @@
 /******* CHECK BOX *******/
 
 .details {
-
   &:hover {
+    .details__hgroup {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-  .details__intitules {
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  }
+    .details__prix {
+      animation: caption-checkbox-price ease 0.3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      min-width: 50px;
+    }
 
-  .prix {
-    animation: caption-check-box-price ease .3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    min-width: 50px;
-  }
+    .details__checkbox {
+      animation: caption-checkbox 0.3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      background-color: $tertiary;
+      display: block;
+      flex: 0 0 15%;
+      max-width: 60px;
+      overflow: hidden;
+      transform-origin: 50% 50%;
+    }
 
-  .caption-check-box {
-    animation: caption-check-box ease .3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    background-color: $tertiary;
-    display: block;
-    flex: 0 0 15%;
-    max-width: 50px;
-    overflow: hidden;
-    transform-origin: 50% 50%;
+    .fa-check-circle {
+      animation: checkbox ease 0.5s;
+      animation-iteration-count: 1;
+      background-color: $tertiary;
+      left: 27%;
+      position: absolute;
+      top: 30%;
+    }
   }
+}
 
-  .fa-check-circle {
-    animation: check-box ease .5s;
-    animation-iteration-count: 1;
-    background-color: $tertiary;
-    left: 27%;
-    position: absolute;
-    top: 30%;
-  }
-  }
+/******* FADE IN *******/
+
+.fade-1 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1000ms;
+}
+
+.fade-2 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1200ms;
+}
+
+.fade-3 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1400ms;
+}
+
+.fade-4 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1600ms;
+}
+
+.fade-5 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 1800ms
+}
+
+.fade-6 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2000ms
+}
+
+.fade-7 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2200ms;
+}
+
+.fade-8 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2400ms;
+}
+
+.fade-9 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2600ms
+}
+
+.fade-10 {
+  animation: fadein ease-in 0.5s;
+  animation-delay: 2800ms;
 }
 
 /******* LOADING SPINNER *******/
