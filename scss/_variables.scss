@@ -1,4 +1,4 @@
-/*** Color ***/
+/*** COLOR ***/
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
@@ -8,11 +8,11 @@ $grey-darker: rgb(87, 87, 87);
 $grey-lighter: #888;
 $color-shadow: rgba(75, 74, 74, 0.8);
 
-/*** Font ***/
+/*** FONT ***/
 $main-font: "Roboto", sans-serif;
 $secondary-font: "Shrikhand", cursive;
 
-/*** Buttons ***/
+/*** BUTTONS ***/
 $button-color: linear-gradient($secondary, $primary);
 $button-shadow: 0 5px 15px 0 darken($grey-color, 20);
 $button-shadow-hover: 0 5px 15px 0 darken($grey-color, 35);

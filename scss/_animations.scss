@@ -1,7 +1,8 @@
 @import "keyframes";
 
-/******* HEART *******/
-
+/********************/
+/******* HEART ******/
+/********************/
 .like {
   .default-icon {
     opacity: 1;
@@ -27,112 +28,134 @@
   }
 }
 
-/******* CHECK BOX *******/
+/******************************/
+/******* CHECKBOX SLIDE *******/
+/******************************/
 
 .details {
-  &:hover {
-    .details__hgroup {
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+  &:hover &__hgroup {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    .details__prix {
-      animation: caption-checkbox-price ease 0.3s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      min-width: 50px;
-    }
+  &__prix {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: darken($grey-darker, 10);
+  }
 
-    .details__checkbox {
-      animation: caption-checkbox 0.3s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      background-color: $tertiary;
-      display: block;
-      flex: 0 0 15%;
-      max-width: 60px;
-      overflow: hidden;
-      transform-origin: 50% 50%;
-    }
+  &__checkbox {
+    background-color: $tertiary;
+    margin-left: 16px;
+    margin-right: -80px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    // border: 2px solid black;
+  }
 
-    .fa-check-circle {
-      animation: checkbox ease 0.5s;
-      animation-iteration-count: 1;
-      background-color: $tertiary;
-      left: 27%;
-      position: absolute;
-      top: 30%;
-    }
+  &:hover &__checkbox {
+    margin-right: -16px;
+  }
+
+  &__boxIcon {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    // border: 2px solid red;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+  }
+
+  &:hover &__boxIcon {
+    transform: rotate(360deg);
+  }
+
+  &__icon {
+    color: $tertiary;
+    // border: 2px solid orange;
   }
 }
 
+/***********************/
 /******* FADE IN *******/
+/***********************/
 
-.fade-1 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 1000ms;
+@for $i from 1 through 10 {
+  .fade-#{$i} {
+    animation: fadeIn 0.5s * $i;
+  }
 }
 
-.fade-2 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 1200ms;
-}
+// .fade-1 {
+//   animation: fadeIn 1s;
+// }
 
-.fade-3 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 1400ms;
-}
+// .fade-2 {
+//   animation: fadeIn 2s;
+// }
 
-.fade-4 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 1600ms;
-}
+// .fade-3 {
+//   animation: fadeIn 3s;
+// }
 
-.fade-5 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 1800ms
-}
+// .fade-4 {
+//   animation: fadeIn 4s;
+// }
 
-.fade-6 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 2000ms
-}
+// .fade-5 {
+//   animation: fadeIn 5s;
+// }
 
-.fade-7 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 2200ms;
-}
+// .fade-6 {
+//   animation: fadeIn 6s;
+// }
 
-.fade-8 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 2400ms;
-}
+// .fade-7 {
+//   animation: fadeIn 7s;
+// }
 
-.fade-9 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 2600ms
-}
+// .fade-8 {
+//   animation: fadeIn 8s;
+// }
 
-.fade-10 {
-  animation: fadein ease-in 0.5s;
-  animation-delay: 2800ms;
-}
+// .fade-9 {
+//   animation: fadeIn 9s;
+// }
 
+// .fade-10 {
+//   animation: fadeIn 10s;
+// }
+
+/*******************************/
 /******* LOADING SPINNER *******/
+/*******************************/
 
 .spin-wrapper {
   position: fixed;
   z-index: 9999;
   top: 0px;
-  left: 0px;
   height: 100%;
   width: 100%;
-  animation: loadspinner 2.5s;
-  // animation-delay: 1s;
-  animation-fill-mode: both;
   background-color: $grey-color;
+  animation: loadspinner ease-in-out 2.5s;
+  animation-fill-mode: both;
 
   .spinner {
     position: absolute;
