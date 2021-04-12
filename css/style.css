@@ -1,6 +1,6 @@
-/*** COLOR ***/
-/*** FONT ***/
-/*** BUTTONS ***/
+/*** Color ***/
+/*** Font ***/
+/*** Buttons ***/
 html {
   scroll-behavior: smooth;
 }
@@ -556,6 +556,17 @@ header {
   }
 }
 
+.blocCenter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+@media only screen and (max-width: 1165px) {
+  .blocCenter {
+    margin-bottom: 0px;
+  }
+}
+
 .details {
   background-color: white;
   display: flex;
@@ -607,7 +618,7 @@ header {
   padding-right: 50px;
 }
 
-/******* BUTTON *******/
+/******* Button *******/
 .button {
   border: none;
   outline: none;
@@ -639,7 +650,7 @@ header {
     transform: translateY(0px);
   }
 }
-/******* LOADING SPINNER *******/
+/******* Loading Spinner *******/
 @keyframes loadspinner {
   100% {
     opacity: 0;
@@ -832,7 +843,7 @@ header {
     transform: translateY(0px);
   }
 }
-/******* LOADING SPINNER *******/
+/******* Loading Spinner *******/
 @keyframes loadspinner {
   100% {
     opacity: 0;

@@ -61,7 +61,6 @@
     align-items: center;
     justify-content: center;
     transition-duration: 0.5s;
-    // border: 2px solid black;
   }
 
   &:hover &__checkbox {
@@ -77,7 +76,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    // border: 2px solid red;
     transform: rotate(45deg);
     transition-duration: 0.5s;
     transition-delay: 0.1s;
@@ -89,7 +87,6 @@
 
   &__icon {
     color: $tertiary;
-    // border: 2px solid orange;
   }
 }
 
@@ -102,46 +99,6 @@
     animation: fadeIn 0.5s * $i;
   }
 }
-
-// .fade-1 {
-//   animation: fadeIn 1s;
-// }
-
-// .fade-2 {
-//   animation: fadeIn 2s;
-// }
-
-// .fade-3 {
-//   animation: fadeIn 3s;
-// }
-
-// .fade-4 {
-//   animation: fadeIn 4s;
-// }
-
-// .fade-5 {
-//   animation: fadeIn 5s;
-// }
-
-// .fade-6 {
-//   animation: fadeIn 6s;
-// }
-
-// .fade-7 {
-//   animation: fadeIn 7s;
-// }
-
-// .fade-8 {
-//   animation: fadeIn 8s;
-// }
-
-// .fade-9 {
-//   animation: fadeIn 9s;
-// }
-
-// .fade-10 {
-//   animation: fadeIn 10s;
-// }
 
 /*******************************/
 /******* LOADING SPINNER *******/
