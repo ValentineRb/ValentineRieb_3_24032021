@@ -173,6 +173,8 @@ header {
   .selection {
     margin-bottom: 20px;
     width: 300px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 .selection:hover {
@@ -289,7 +291,8 @@ header {
 @media only screen and (max-width: 516px) {
   .figure {
     width: 330px;
-    margin-left: 20px;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 .figure__image {
@@ -584,7 +587,10 @@ header {
 .details__hgroup {
   flex: 1;
   padding: 15px;
+  padding-right: 0px;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .details__hgroup h3 {
   margin-top: 0px;
@@ -593,6 +599,7 @@ header {
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 .details__hgroup h4 {
   margin-top: 0px;
@@ -601,6 +608,7 @@ header {
   font-weight: normal;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 516px) {
   .details__hgroup h4 {

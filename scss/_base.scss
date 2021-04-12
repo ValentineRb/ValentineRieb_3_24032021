@@ -170,6 +170,8 @@ header {
   @media only screen and (max-width: 516px) {
     margin-bottom: 20px;
     width: 300px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   &:hover {
@@ -256,7 +258,6 @@ header {
     margin: auto;
     justify-content: center;
   }
-
   @media only screen and (max-width: 694px) {
     margin: 0px;
   }
@@ -285,7 +286,8 @@ header {
 
   @media only screen and (max-width: 516px) {
     width: 330px;
-    margin-left: 20px;
+    margin: auto;
+    margin-bottom: 30px;
   }
 
   &__image {
@@ -573,7 +575,10 @@ header {
   &__hgroup {
     flex: 1;
     padding: 15px;
+    padding-right: 0px;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
     h3 {
       margin-top: 0px;
@@ -582,6 +587,7 @@ header {
       font-weight: 500;
       text-overflow: ellipsis;
       overflow: hidden;
+      white-space: nowrap;
     }
 
     h4 {
@@ -591,6 +597,7 @@ header {
       font-weight: normal;
       text-overflow: ellipsis;
       overflow: hidden;
+      white-space: nowrap;
 
       @media only screen and (max-width: 516px) {
         font-size: 14px;
@@ -598,7 +605,6 @@ header {
     }
   }
 }
-
 
 .commander {
   text-align: center;
